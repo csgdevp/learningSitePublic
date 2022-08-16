@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <title>Fake Little Website</title>
+    <link rel="stylesheet" type="text/css" href="custom.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      const urlParams = new URLSearchParams(window.location.search);
+      const prodParam = urlParams.get("product") || "a thing";
+
+      digitalData = {
+        page: {
+          pageName: "home",
+          language: "en-US",
+          primaryCategory: "home",
+          pageType: "home",
+        },
+        user: {
+          userID: "jenn123",
+        },
+      };
+    </script>
+
+    <!--"Adobe Jennifer Kunz" company, "Learning" property-->
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="w-100 jumbotron mb-0 alert-primary">
+        <h2>Fake Little Website</h2>
+      </div>
+      <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Main</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="product.html">Products</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="container">
+        <div class="justify-content-center m-3">
+          <img
+            src="images/Upside-Down-Baby-Sloth.jpg"
+            class="rounded mx-auto w-75"
+            style="max-width: 600px"
+            alt="adorable baby sloth hanging upside down"
+          />
+        </div>
+
+        <a
+          id="calendarJoke"
+          class="btn btn-success col-sm m-2"
+          data-toggle="collapse"
+          href="#collapseExample1"
+          role="button"
+          aria-expanded="false"
+          aria-controls="collapseExample1"
+          data-track="content expand"
+        >
+          Did you hear about the two thieves that stole a calendar?
+        </a>
+        <div class="collapse m-2" id="collapseExample1">
+          <div class="card card-body">They each got 6 months.</div>
+        </div>
+
+        <a
+          id="pterodactylJoke"
+          class="btn btn-success col-sm m-2"
+          data-toggle="collapse"
+          href="#collapseExample2"
+          role="button"
+          aria-expanded="false"
+          aria-controls="collapseExample2"
+          data-track="content expand"
+        >
+          Why can't you hear a pterodactyl using the bathroom?
+        </a>
+        <div class="collapse" id="collapseExample2">
+          <div class="card card-body m-2">Because the P is silent</div>
+        </div>
+
+        <a
+          id="ninjaJoke"
+          class="btn btn-success col-sm m-2"
+          data-toggle="collapse"
+          href="#collapseExample3"
+          role="button"
+          aria-expanded="false"
+          aria-controls="collapseExample3"
+          data-track="content expand"
+        >
+          Why did the ninja get promoted?
+        </a>
+        <div class="collapse" id="collapseExample3">
+          <div class="card card-body m-2">
+            Because he never showed up at work.
+          </div>
+        </div>
+
+        <a
+          id="rideBikes"
+          class="btn btn-success col-sm m-2"
+          data-toggle="collapse"
+          href="#collapseExample4"
+          role="button"
+          aria-expanded="false"
+          aria-controls="collapseExample4"
+          data-track="content expand"
+        >
+          How many kids with ADHD does it take to screw in a light bulb?
+        </a>
+        <div class="collapse" id="collapseExample4">
+          <div class="card card-body m-2">Let's go ride bikes!</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
